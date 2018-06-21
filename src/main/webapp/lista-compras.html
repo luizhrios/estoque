@@ -1,0 +1,41 @@
+<html>
+
+<head>
+
+<script type="text/javascript">
+	function calcularTotal() {
+		valorTotal.value = quantidade.value * valorUnitario.value;
+	}
+</script>
+
+</head>
+<body>
+	<form>
+
+		<table border=1>
+			<tr>
+				<td>Produto:</td>
+				<td><select>
+						<option>Caju</option>
+						<option>Jaca</option>
+						<option>Manga</option>
+						<option>Goiaba</option>
+				</select></td>
+			</tr>
+			<tr>
+				<td>Quantidade:</td>
+				<td><input id="quantidade" onChange="calcularTotal();" /></td>
+			</tr>
+			<tr>
+				<td>Valor Unitário:</td>
+				<td><input id="valorUnitario" onChange="calcularTotal();" /></td>
+			</tr>
+			<tr>
+				<td>Total:</td>
+				<td><input id="valorTotal" disabled /></td>
+			</tr>
+		</table>
+
+	</form>
+</body>
+</html>
